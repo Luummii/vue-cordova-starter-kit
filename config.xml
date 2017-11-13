@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="1" id="com.vue.starter" version="1.1.0000" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>vue-cordova-starter-kit</name>
+    <description>
+        vue-cordova-starter-kit
+    </description>
+    <author email="luummii@vuejs.fun">
+        Andrey Zimin (Luummii)
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <allow-intent href="market:*" />
+        <allow-navigation href="*" />
+        <preference name="Orientation" value="portrait" />
+        <preference name="StatusBarBackgroundColor" value="#5C5275" />
+        <preference name="AutoHideSplashScreen" value="true" />
+        <preference name="SplashScreenDelay" value="5000" />
+        <preference name="AndroidPersistentFileLocation" value="Internal" />
+        <preference name="AndroidExtraFilesystems" value="files,files-external,documents,sdcard,cache,cache-external,assets,root" />
+        <splash density="port-hdpi" src="res/screen/android/splash.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash.png" />
+        <icon src="res/btn.png" />
+    </platform>
+    <plugin name="cordova-plugin-camera" spec="~2.3.0">
+        <variable name="CAMERA_USAGE_DESCRIPTION" value=" " />
+        <variable name="PHOTOLIBRARY_USAGE_DESCRIPTION" value=" " />
+    </plugin>
+    <plugin name="cordova-plugin-device" spec="~1.1.3" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-statusbar" spec="^2.2.3" />
+    <plugin name="cordova-plugin-splashscreen" spec="^4.0.3" />
+    <plugin name="cordova-plugin-file-transfer" spec="^1.6.3" />
+    <plugin name="cordova-plugin-file-opener2" spec="^2.0.19" />
+    <plugin name="cordova-plugin-inappbrowser" spec="^1.7.2" />
+    <engine name="android" spec="~6.4.0" />
+</widget>
