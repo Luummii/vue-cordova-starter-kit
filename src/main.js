@@ -3,9 +3,9 @@ import App from './App'
 import VueCordova from 'vue-cordova'
 import VueRouter from 'vue-router'
 import { routes } from './system/routes'
-import VueOnsen from 'vue-onsenui'
+// import VueOnsen from 'vue-onsenui'
 
-Vue.use(VueOnsen)
+// Vue.use(VueOnsen)
 Vue.use(VueRouter)
 Vue.use(VueCordova, {
   optionTestKey: 'optionTestValue'
